@@ -171,14 +171,32 @@ margin:0 auto;
 
 .title{
 font-family:"Space Grotesk";
-font-size:40px;
-margin-bottom:15px;
+font-weight:500;
+font-size:36px;
+letter-spacing:-.01em;
+margin-bottom:14px;
+padding-left:20px;
+position:relative;
+}
+
+.title::before{
+content:"";
+position:absolute;
+left:0;
+top:8px;
+bottom:8px;
+width:4px;
+border-radius:4px;
+background:linear-gradient(180deg,var(--blue),var(--cyan));
 }
 
 .subtitle{
 color:var(--muted);
 margin-bottom:40px;
-max-width:700px;
+max-width:640px;
+padding-left:20px;
+font-size:16px;
+line-height:1.8;
 }
 
 .stats{
@@ -307,7 +325,7 @@ display:none;
 <nav>
 <div class="nav-inner">
 
-<h3>Gilberte ADJAGAN</h3>
+<h3>Gilberte.</h3>
 
 <ul>
 <li><a href="#about">À propos</a></li>
@@ -438,7 +456,7 @@ la sécurisation des données et le pilotage technique de projets Agile.
 </div>
 
 <div class="card project">
-<h3>Plateforme ANTS</h3>
+<h3>Plateforme Govethos</h3>
 <p>Validation fonctionnelle et suivi des évolutions applicatives.</p>
 </div>
 
